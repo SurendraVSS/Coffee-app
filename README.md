@@ -1,4 +1,9 @@
-# React-Native-coffee-app-starter-kit
+
+
+
+
+# React-Native-coffee-app
+<img width="395" alt="Screenshot 2022-10-29 at 1 30 03 PM" src="https://user-images.githubusercontent.com/106951672/198821334-856440c7-1625-470f-9ed6-41cb0c7ed33f.png">
 
 ## Get Started
 
