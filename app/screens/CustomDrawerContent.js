@@ -31,7 +31,8 @@ const CustomDrawerContent = (props) => {
                         <DrawerItem style={{ backgroundColor: colors.darkLight, borderRadius: 10 }} label={() => (<Text style={{ fontSize: 20,textAlign:'center',color:'white' }}>Home</Text>)} onPress={() => props.navigation.navigate("Main")} />
 
                         {/* New Drawer Item */}
-                        <DrawerItem style={{ backgroundColor: colors.darkLight,borderRadius:10 }} label={() => (<Text style={{ fontSize: 20, textAlign: 'center', color: 'white' }}>About</Text>)} onPress={() => props.navigation.navigate("Main")} />
+                        <DrawerItem style={{ backgroundColor: colors.darkLight, borderRadius: 10 }} label={() => (<Text style={{ fontSize: 20, textAlign: 'center', color: 'white' }}>About</Text>)} onPress={() => props.navigation.navigate("DetailScreen")} />
+                        
                         <View style={{
                             bottom:10,
                             position:'absolute',

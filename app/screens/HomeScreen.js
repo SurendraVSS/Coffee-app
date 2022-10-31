@@ -133,6 +133,7 @@ const HomeScreen = () => {
                       width: "100%",
                       height: 150
                     }}
+                    onPress={() => navigation.navigate("DetailScreen", {cof: coffee})}
                   >
                     <Image source={coffee.image} style={{
                       width: "100%",

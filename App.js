@@ -5,9 +5,12 @@ import HomeScreen from "./app/screens/HomeScreen";
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { NavigationContainer } from '@react-navigation/native';
 import CustomDrawerContent from "./app/screens/CustomDrawerContent";
+import CoffeeDetailsScreen from "./app/screens/CoffeeDetailsScreen";
+import coffees from "./app/config/coffees";
 const Drawer = createDrawerNavigator();
 
-function MyDrawer() {
+function MyDrawer({coffeess}) {
+ 
   return (
     <Drawer.Navigator
     drawerContent={props => <CustomDrawerContent {...props} />}
@@ -19,6 +22,7 @@ function MyDrawer() {
       }}
     >
       <Drawer.Screen name="Main" component={HomeScreen} />
+      <Drawer.Screen name="DetailScreen" component={CoffeeDetailsScreen} cof={coffeess[4]}/>
     </Drawer.Navigator>
   );
 }
@@ -28,7 +32,7 @@ const App = () => {
    
      
       <NavigationContainer>
-        <MyDrawer />
+      <MyDrawer coffeess={coffees} />
       </NavigationContainer>
    
   );
